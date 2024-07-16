@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Registrasi</title>
+</head>
+<body>
+
+<h1>Form Registrasi</h1>
+
+  <label for="nama">Nama :</label><br>
+  <input type="text" id="nama" name="nama" required><br><br>
+
+  <label for="kelas">Pilih kelas :</label>
+  <select name="kelas" id="kelas"> 
+    <optgroup label="RPL">RPL</optgroup>
+    <option value="X">X</option>
+    <option value="XI">XI</option>
+    <option value="XII">XII</option>
+
+    <optgroup label="TKJ">TKj</optgroup>
+    <option value="X">X</option>
+    <option value="XI">XI</option>
+    <option value="XII">XII</option>
+
+    <optgroup label="TKJ">MPLB</optgroup>
+    <option value="X">X</option>
+    <option value="XI">XI</option>
+    <option value="XII">XII</option>
+
+  </select>
+
+  <p><label for="Alamat">Alamat :</label></p>
+  <textarea></textarea>  
+  
+  <p><label>Jenis kelamin:</label></p>
+  <input type="radio" id="laki_laki" name="jenis kelamin">
+  <label for="laki_laki">Laki-laki</label>
+
+  <input type="radio" id="perempuan" name="jenis kelamin">
+  <label for="perempuan">Perempuan</label>
+
+  <p><label for="tanggal_lahir">Tanggal lahir:</label></p>
+  <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+
+  <p><label for="email">Masukan email aktif :</label>
+  <input type="email" name="email"><br><br>
+  
+  <label for="password">Masukan Password :</label>
+  <input type="password" name="password" minlength="4" maxlength="6"><br><br>
+  
+  <label for="ualngi password">Ulangi Password :</label>
+  <input type="password" name="ulangi password" minlength="4" maxlength="6"><br><br>
+
+  <p><label for="profile">Unggah Foto Profile :</label>
+  <input type="file" name="profile" accept="image/png, image/jp"></p>
+
+  <p><label for="profile">Unggah Transkripsi Nilai :</label>
+  <input type="file" name="pdfFile" accept=".pdf"></p>
+
+  <p><label>Tidak copas coidngan orang lain :</label>
+  <input type="checkbox" name="tidak copas"></p>
+  
+  <form action="halaman2.html" method="GET">
+    <button type="submit">Submit</button>
+</form>
+
+
+
+</body>
+</html>
